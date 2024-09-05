@@ -54,7 +54,7 @@ A web application designed to manage and streamline the vehicle rental process. 
 1. **Clone the repository:**
 
     ```sh
-    git clone https://github.com/rohith67/vehicle-rental-system.git
+    git clone https://github.com/rohith679/vehicle-rental-system.git
     cd vehicle-rental-system
     ```
 
