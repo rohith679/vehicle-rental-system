@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Vehicle Rental System</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css" integrity="sha512-HrAP1Tt3qszwT7bAAiGXKjOV77zWQ2+1L0gXeZcEjK1f8Fcd0UVlOxIgRzGirhW8jCzZI9XZ12vB3rT3iIsIgQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" type="text/css" href="css/s2.css">
+  <style>
+    /* Custom CSS */
+    body{
+    margin: 0;
+    padding: 0;
+    background-image: url(images/loginbg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family : Verdana,Tahoma, sans-serif;
+}
+    h1 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+#showCarsButton {
+  margin: 2rem auto;
+  display: block;
+  background-color: #ff4a4a; /* set the background color to a shade of pink */
+  color: #fff; /* set the text color to white */
+  font-size: 2rem; /* increase the font size to 2rem */
+  padding: 1rem 2rem; /* add padding to make the button larger */
+  border-radius: 0.5rem; /* add rounded corners to the button */
+}
+
+
+#carsList {
+  margin: 2rem auto;
+  max-width: 800px;
+}
+
+#carsList ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#carsList li {
+  border: 1px solid #000;
+  background: #fcf0f0;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+#showCarsButton2 {
+  margin: 2rem auto;
+  display: block;
+  background-color: #ff4a4a; /* set the background color to a shade of pink */
+  color: #fff; /* set the text color to white */
+  font-size: 2rem; /* increase the font size to 2rem */
+  padding: 1rem 2rem; /* add padding to make the button larger */
+  border-radius: 0.5rem; /* add rounded corners to the button */
+}
+
+
+#carsList2 {
+  margin: 2rem auto;
+  max-width: 800px;
+}
+
+#carsList2 ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#carsList2 li {
+  border: 1px solid #000;
+  background: #fcf0f0;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+#showCarsButton3 {
+  margin: 2rem auto;
+  display: block;
+  background-color: #ff4a4a; /* set the background color to a shade of pink */
+  color: #fff; /* set the text color to white */
+  font-size: 2rem; /* increase the font size to 2rem */
+  padding: 1rem 2rem; /* add padding to make the button larger */
+  border-radius: 0.5rem; /* add rounded corners to the button */
+}
+
+
+#carsList3 {
+  margin: 2rem auto;
+  max-width: 800px;
+}
+
+#carsList3 ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#carsList3 li {
+  border: 1px solid #000;
+  background: #fcf0f0;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+#showCars {
+  margin: 2rem auto;
+  display: block;
+  background-color: #ff4a4a; /* set the background color to a shade of pink */
+  color: #fff; /* set the text color to white */
+  font-size: 2rem; /* increase the font size to 2rem */
+  padding: 1rem 2rem; /* add padding to make the button larger */
+  border-radius: 0.5rem; /* add rounded corners to the button */
+}
+
+#searchCars {
+  margin: 2rem auto;
+  display: block;
+  background-color: #ff4a4a; /* set the background color to a shade of pink */
+  color: #fff; /* set the text color to white */
+  font-size: 2rem; /* increase the font size to 2rem */
+  padding: 1rem 2rem; /* add padding to make the button larger */
+  border-radius: 0.5rem; /* add rounded corners to the button */
+}
+
+
+#carsList11 {
+  margin: 2rem auto;
+  max-width: 800px;
+}
+
+#carsList11 ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#carsList11 li {
+  border: 1px solid #000;
+  background: #fcf0f0;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+</style>
+</head>
+<body>
+  <div class="down">
+    <a href="homepage"><img src="images/home.jpg" style=" width:95px; height:30px; margin-right:50px;border:2px ridge rgba(145, 134, 134, 0.699);margin-top:2px;"></a>
+ </div> 
+  
+  <h2> WELCOME TO CAR RENTAL PORTAL </h2></br>
+  
+  <div style="text-align: center;">
+    <a href="search" style="text-decoration:none; 
+        font-size:25px; color: rgb(254, 255, 254); padding: 10px;
+        background-color: #3f51b5;margin-top: 30px; 
+        border: 4px rgb(240, 239, 222) solid; border-radius:9px;
+        padding: 6px;">SEARCH CARS</a>
+</div>
+
+<button id="showCars" class="btn btn-primary">Sedan Cars</button>
+  <div id="carsList11"></div>
+
+  <button id="showCarsButton" class="btn btn-primary">Luxury Cars</button>
+  <div id="carsList"></div>
+
+  <button id="showCarsButton2" class="btn btn-primary">SUV Cars</button>
+  <div id="carsList2"></div>
+
+  <button id="showCarsButton3" class="btn btn-primary">Sports Cars</button>
+  <div id="carsList3"></div>
+  
+
+
+  <!-- jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <!-- Bootstrap JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js" integrity="sha512-g+TKOtbDjW+6z/4pU/t3q4x8eStN+s6j+R+zASRDMFZWQ8dKzF1vQH19XzZNLJbM+YNWteekvY82C7m04nRLw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script>$(document).ready(function() {
+    $('#showCarsButton').click(function() {
+      $.ajax({
+        type: "GET",
+        url: "json/luxury.json",
+        success: function(cars) {
+          var carsList = '<ul class="list-unstyled">';
+          $.each(cars, function(index, car) {
+            carsList += '<li class="d-flex align-items-center">' + '<div class="flex-grow-1">' + '<h5 class="mb-0">' + car.modelNumber + '</h5>' + '<p class="mb-0">'+car.carDescription+'</p>' + '<p class="mb-0">Rent per day: '+car.rentChargesPerDay+'</p>' + '<a href="search" class="btn btn-success">Book Now</a>'+ '</div>' + '</li>';
+          });
+          carsList += '</ul>';
+          $('#carsList').html(carsList);
+        }
+      });
+    });
+
+    $('#showCarsButton2').click(function() {
+      $.ajax({
+        type: "GET",
+        url: "json/suv.json",
+        success: function(cars) {
+          var carsList = '<ul class="list-unstyled">';
+          $.each(cars, function(index, car) {
+            carsList += '<li class="d-flex align-items-center">' + '<div class="flex-grow-1">' + '<h5 class="mb-0">' + car.modelNumber + '</h5>' + '<p class="mb-0">'+car.carDescription+'</p>' + '<p class="mb-0">Rent per day: '+car.rentChargesPerDay+'</p>' + '<a href="search" class="btn btn-success">Book Now</a>'+ '</div>' + '</li>';
+          });
+          carsList += '</ul>';
+          $('#carsList2').html(carsList);
+        }
+      });
+    });
+
+    $('#showCarsButton3').click(function() {
+      $.ajax({
+        type: "GET",
+        url: "json/sports.json",
+        success: function(cars) {
+          var carsList = '<ul class="list-unstyled">';
+          $.each(cars, function(index, car) {
+            carsList += '<li class="d-flex align-items-center">' + '<div class="flex-grow-1">' + '<h5 class="mb-0">' + car.modelNumber + '</h5>' + '<p class="mb-0">'+car.carDescription+'</p>' + '<p class="mb-0">Rent per day: '+car.rentChargesPerDay+'</p>' + '<a href="search" class="btn btn-success">Book Now</a>'+ '</div>' + '</li>';
+          });
+          carsList += '</ul>';
+          $('#carsList3').html(carsList);
+        }
+      });
+    });
+
+    $('#showCars').click(function() {
+      $.ajax({
+        type: "GET",
+        url: "json/sedan.json",
+        success: function(cars) {
+          var carsList = '<ul class="list-unstyled">';
+          $.each(cars, function(index, car) {
+            carsList += '<li class="d-flex align-items-center">' + '<div class="flex-grow-1">' + '<h5 class="mb-0">' + car.modelNumber + '</h5>' + '<p class="mb-0">'+car.carDescription+'</p>' + '<p class="mb-0">Rent per day: '+car.rentChargesPerDay+'</p>' + '<a href="search" class="btn btn-success">Book Now</a>'+ '</div>' + '</li>';
+          });
+          carsList += '</ul>';
+          $('#carsList11').html(carsList);
+        }
+      });
+    });
+
+  });
+</script>
+
+</body>
+</html>

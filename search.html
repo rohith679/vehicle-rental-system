@@ -1,0 +1,761 @@
+<!doctype html>
+<html>
+<head>
+<title>@ Available Cars</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" 
+integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="css/s1.css">
+<script src=
+"https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+	</script>
+<style>
+
+.box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem,1fr));
+    gap:1.5rem;
+    
+}
+
+.box-container .box{
+    padding: 3rem 2rem;
+    background: #fff;
+    outline:var(--outline);
+    outline-offset: -1rem;
+    text-align: center;
+    box-shadow: var(--box-shadow);
+    border : 5px solid #3f51b5
+
+}
+
+.box-container .box11{
+    padding: 3rem 2rem;
+    background: #fff;
+    outline:var(--outline);
+    outline-offset: -1rem;
+    text-align: center;
+    box-shadow: var(--box-shadow);
+    border : 2px solid #3f51b5
+
+}
+
+.box-container .box11:hover{
+    background:rgba(0, 0,0, 0.2);
+    outline-offset: 0rem;
+}
+
+.box-container .box img{
+    margin: 1rem 0;
+    height: 15rem;
+}
+
+
+    h1 {
+        font-size: 24px;
+        text-align: center;
+        color: #000001;
+    }
+
+    h6 {
+        font-size: 34px;
+        text-align: center;
+        color: #000001;
+    }
+
+    h2 {
+        font-size: 18px;
+        margin-top: 20px;
+        color: #3f51b5;
+    }
+    h7 {
+        font-size: 30px;
+        color: #fd0f0b;
+        margin-top: 20px;
+    }
+    input {
+        padding: 10px;
+        font-size: 16px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+    button {
+        padding: 10px 20px;
+        font-size: 16px;
+        border: none;
+        background-color: #008CBA;
+        color: #fff;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    #result, #2p , #pp
+     {
+        font-size: 24px;
+        color: #008CBA;
+        text-align: center;
+        margin-top: 20px;
+    }
+table {
+  background-color: #ffeb3b;
+  margin: 0 auto;
+}
+
+th, td {
+  padding: 100px;
+  text-align: center;
+}
+
+th {
+  background-color: #3f51b5;
+  color: #ffffff;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+img {
+  border-radius: 10px;
+}
+
+.hello {
+  padding: 50px;
+  text-align: center;
+}
+</style>
+</head>
+<body>
+    <div class="down">
+        <a href="homepage"><img src="images/home.jpg" style=" width:95px; height:30px; margin-right:50px;border:2px ridge rgba(145, 134, 134, 0.699);margin-top:2px;"></a>
+     </div> 
+</br>
+</br>
+    <center>
+		<h3>
+           <b>Search for car using Model, Type or Expense:</b> 
+		</h3>
+		<b>
+		<input id="bhaswanth1" type="text"
+				placeholder="Search here">
+		</b>
+        <br><br>
+         
+<div class="hello">
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th colspan="6"><H3>CARS FOR RENT</H3></th>
+      </tr>
+      <tr>
+        <th colspan="1">select car</th>
+        <th colspan="1">S No</th>
+        <th colspan="1">Type</th>
+        <th colspan="1">MODEL</th>
+        <th colspan="1">CAR PICTURE</th>
+        <th colspan="1">Expenses(For one day without Accessories)</th>
+      </tr>
+    </thead>
+    <tbody id="bhaswanth2">
+
+    <tr>
+    <td colspan="1"><input type="radio" name="price" value="3850"></td>
+    <td colspan="1">1</td>
+    <td colspan="1">NEXON</td>
+    <td colspan="1">SEDAN</td>
+    <td colspan="1"><img src="images/nexon.jpeg" height="100" width="180"></td>
+    <td colspan="1">3850.00/-</td>
+     </tr>
+
+    <tr>
+        <td colspan="1"><input type="radio" name="price" value="5100"></td>
+    <td colspan="1">2</td>
+    <td colspan="1">TIGOR</td>
+    <td colspan="1">SEDAN</td>
+    <td colspan="1"><img src="images/TIGOR.jpeg" height="100" width="180"></td>
+    <td colspan="1">5100.00/-</td>
+    </tr>
+
+        
+        
+    <tr>
+        <td colspan="1"><input type="radio" name="price" value="2900"></td>
+    <td colspan="1">3</td>
+    <td colspan="1">ZEST</td>
+    <td colspan="1">SEDAN</td>
+    <td colspan="1"><img src="images/zest.jpeg" height="100" width="180"></td>
+    <td colspan="1">2900.00/-</td>
+    </tr>
+
+
+    <tr>
+        <td colspan="1"><input type="radio" name="price" value="4100"></td>
+    <td colspan="1">4</td>
+    <td colspan="1">HEXA</td>
+    <td colspan="1">SEDAN</td>
+    <td colspan="1"><img src="images/hexa.jpeg" height="100" width="180"></td>
+    <td colspan="1">4100.00/-</td>
+    </tr>
+
+      <tr>
+        <td colspan="1"><input type="radio" name="price" value="2575"></td>
+    <td colspan="1">5</td>
+    <td colspan="1">ALTROZ</td>
+    <td colspan="1">SEDAN</td>
+    <td colspan="1"><img src="images/altroz.jpeg" height="100" width="180"></td>
+    <td colspan="1">2575.00/-</td>
+      </tr>
+
+      <tr>
+        <td colspan="1"><input type="radio" name="price" value="3625"></td>
+        <td colspan="1">6</td>
+        <td colspan="1">OCTAVIA</td>
+        <td colspan="1">SEDAN</td>
+        <td colspan="1"><img src="images/oktavia.jpeg" height="100" width="180"></td>
+        <td colspan="1">3625.00/-</td>
+        </tr>
+
+        <tr>
+            <td colspan="1"><input type="radio" name="price" value="4999"></td>
+            <td colspan="1">7</td>
+            <td colspan="1">KODIAQ</td>
+            <td colspan="1">SEDAN</td>
+            <td colspan="1"><img src="images/KODIAQ.jpeg" height="100" width="180"></td>
+            <td colspan="1">4999.00/-</td>
+        </tr>
+        <tr>
+            <td colspan="1"><input type="radio" name="price" value="2575"></td>
+            <td colspan="1">8</td>
+            <td colspan="1">SUPERB</td>
+            <td colspan="1">SEDAN</td>
+            <td colspan="1"><img src="images/superb.jpeg" height="100" width="180"></td>
+            <td colspan="1">2575.00/-</td>
+        </tr>
+
+        <tr>
+            <td colspan="1"><input type="radio" name="price" value="3625"></td>
+            <td colspan="1">9</td>
+            <td colspan="1">ETIOS</td>
+            <td colspan="1">SEDAN</td>
+            <td colspan="1"><img src="images/etios.jpeg" height="100" width="180"></td>
+            <td colspan="1">3625.00/-</td>
+        </tr>
+        <tr>
+            <td colspan="1"><input type="radio" name="price" value="3299"></td>
+            <td colspan="1">10</td>
+            <td colspan="1">CAMRY</td>
+            <td colspan="1">SEDAN</td>
+            <td colspan="1"><img src="images/camry.jpeg" height="100" width="180"></td>
+            <td colspan="1">3299.00/-</td>
+        </tr>
+
+        <tr>
+            <td colspan="1"><input type="radio" name="price" value="2999"></td>
+            <td colspan="1">11</td>
+            <td colspan="1">COROLLA</td>
+            <td colspan="1">SEDAN</td>
+            <td colspan="1"><img src="images/corolla.jpeg" height="100" width="180"></td>
+            <td colspan="1">2999.00/-</td>
+        </tr>
+        <tr>
+            <td colspan="1"><input type="radio" name="price" value="3625"></td>
+            <td colspan="1">12</td>
+            <td colspan="1">CITY</td>
+            <td colspan="1">SEDAN</td>
+            <td colspan="1"><img src="images/hondacity.jpeg" height="100" width="180"></td>
+            <td colspan="1">3625.00/-</td>
+        </tr>
+        <tr>
+            <td colspan="1"><input type="radio" name="price" value="3299"></td>
+            <td colspan="1">13</td>
+            <td colspan="1">AMAZE</td>
+            <td colspan="1">SEDAN</td>
+            <td colspan="1"><img src="images/hondaamaze.jpeg" height="100" width="180"></td>
+            <td colspan="1">3299.00/-</td>
+        </tr>
+        <tr>
+            <td colspan="1"><input type="radio" name="price" value="3699"></td>
+            <td colspan="1">14</td>
+            <td colspan="1">SWIFT</td>
+            <td colspan="1">SEDAN</td>
+            <td colspan="1"><img src="images/SWIFT.jpeg" height="100" width="180"></td>
+            <td colspan="1">3699.00/-</td>
+        </tr>
+        <tr>
+            <td colspan="1"><input type="radio" name="price" value="3599"></td>
+            <td colspan="1">15</td>
+            <td colspan="1">BREEZA</td>
+            <td colspan="1">SEDAN</td>
+            <td colspan="1"><img src="images/breeza.jpeg" height="100" width="180"></td>
+            <td colspan="1">3599.00/-</td>
+        </tr>
+        <tr>
+            <td colspan="1"><input type="radio" name="price" value="9999"></td>
+            <td colspan="1">16</td>
+            <td colspan="1">AUDI A4</td>
+            <td colspan="1">LUXURY</td>
+            <td colspan="1"><img src="images/audia4.jpeg" height="100" width="180"></td>
+            <td colspan="1">9999.00/-</td>
+        </tr>
+        <tr>
+            <td colspan="1"><input type="radio" name="price" value="10999"></td>
+            <td colspan="1">17</td>
+            <td colspan="1">AUDI S5</td>
+            <td colspan="1">LUXURY</td>
+            <td colspan="1"><img src="images/audis5.jpeg" height="100" width="180"></td>
+            <td colspan="1">10999.00/-</td>
+        </tr>
+        <tr>
+            <td colspan="1"><input type="radio" name="price" value="9999"></td>
+            <td colspan="1">18</td>
+            <td colspan="1">AUDI Q5</td>
+            <td colspan="1">LUXURY</td>
+            <td colspan="1"><img src="images/audiq5.jpeg" height="100" width="180"></td>
+            <td colspan="1">9999.00/-</td>
+        </tr>
+        <tr>
+            <td colspan="1"><input type="radio" name="price" value="9999"></td>
+            <td colspan="1">19</td>
+            <td colspan="1">BMW I4</td>
+            <td colspan="1">LUXURY</td>
+            <td colspan="1"><img src="images/bmwi4.jpeg" height="100" width="180"></td>
+            <td colspan="1">9999.00/-</td>
+        </tr>
+        <tr>
+            <td colspan="1"><input type="radio" name="price" value="10999"></td>
+            <td colspan="1">20</td>
+            <td colspan="1">BMW X1</td>
+            <td colspan="1">LUXURY</td>
+            <td colspan="1"><img src="images/bmwx1.jpeg" height="100" width="180"></td>
+            <td colspan="1">10999.00/-</td>
+        </tr>
+        <tr>
+            <td colspan="1"><input type="radio" name="price" value="9999"></td>
+            <td colspan="1">21</td>
+            <td colspan="1">BMW XM</td>
+            <td colspan="1">LUXURY</td>
+            <td colspan="1"><img src="images/bmwxm.jpeg" height="100" width="180"></td>
+            <td colspan="1">9999.00/-</td>
+        </tr>
+        <tr>
+            <td colspan="1"><input type="radio" name="price" value="9999"></td>
+            <td colspan="1">22</td>
+            <td colspan="1">BMW Z4</td>
+            <td colspan="1">LUXURY</td>
+            <td colspan="1"><img src="images/bmwz4.jpeg" height="100" width="180"></td>
+            <td colspan="1">9999.00/-</td>
+        </tr>
+    
+        <tr>
+            <td colspan="1"><input type="radio" name="price" value="3850"></td>
+            <td colspan="1">23</td>
+            <td colspan="1">XUV 500</td>
+            <td colspan="1">SUV</td>
+            <td colspan="1"><img src="images/xuv500.jpeg" height="100" width="180"></td>
+            <td colspan="1">3850.00/-</td>
+        </tr>
+        <tr>
+            <td colspan="1"><input type="radio" name="price" value="4100"></td>
+            <td colspan="1">24</td>
+            <td colspan="1">THAR</td>
+            <td colspan="1">SUV</td>
+            <td colspan="1"><img src="images/Mahindra-Thar-10-Reasons-to-Buy.jpg" height="100" width="180"></td>
+            <td colspan="1">4100.00/-</td>
+              </tr> 
+        <tr>
+            <td colspan="1"><input type="radio" name="price" value="2850"></td>
+            <td colspan="1">25</td>
+            <td colspan="1">EVOQUE</td>
+            <td colspan="1">SUV</td>
+            <td colspan="1"><img src="images/evoque.jpeg" height="100" width="180"></td>
+            <td colspan="1">2850.00/-</td>
+        </tr>
+        <tr>
+            <td colspan="1"><input type="radio" name="price" value="4100"></td>
+            <td colspan="1">26</td>
+            <td colspan="1">VELER</td>
+            <td colspan="1">SUV</td>
+            <td colspan="1"><img src="images/land-rover-2138wsad34-disco-spo.jpg" height="100" width="180"></td>
+            <td colspan="1">4100.00/-</td>
+        </tr>
+        <tr>
+            <td colspan="1"><input type="radio" name="price" value="4700"></td>
+            <td colspan="1">27</td>
+            <td colspan="1">DISCOVERY</td>
+            <td colspan="1">SUV</td>
+            <td colspan="1"><img src="images/LandRoverDiscoverySport0416.jpg" height="100" width="180"></td>
+            <td colspan="1">4700.00/-</td>
+        </tr>
+        <tr>
+            <td colspan="1"><input type="radio" name="price" value="36250"></td>
+            <td colspan="1">28</td>
+            <td colspan="1">URUS</td>
+            <td colspan="1">SPORTS</td>
+            <td colspan="1"><img src="images/LAMBO.jpeg" height="100" width="180"></td>
+            <td colspan="1">36250.00/-</td>
+        </tr>
+        <tr>
+            <td colspan="1"><input type="radio" name="price" value="32999"></td>
+            <td colspan="1">29</td>
+            <td colspan="1">AVENTADOR</td>
+            <td colspan="1">SPORTS</td>
+            <td colspan="1"><img src="images/AVEN.jpeg" height="100" width="180"></td>
+            <td colspan="1">32999.00/-</td>
+        </tr>
+        <tr>
+            <td colspan="1"><input type="radio" name="price" value="49999"></td>
+            <td colspan="1">30</td>
+            <td colspan="1">HURACAN</td>
+            <td colspan="1">SPORTS</td>
+            <td colspan="1"><img src="images/HURR.jpeg" height="100" width="180"></td>
+            <td colspan="1">49999.00/-</td>
+        </tr>
+        <tr>
+            <td colspan="1"><input type="radio" name="price" value="59999"></td>
+            <td colspan="1">31</td>
+            <td colspan="1">CHIRON</td>
+            <td colspan="1">SPORTS</td>
+            <td colspan="1"><img src="images/chiron.jpeg" height="100" width="180"></td>
+            <td colspan="1">59999.00/-</td>
+        </tr>
+        <tr>
+            <td colspan="1"><input type="radio" name="price" value="52999"></td>
+            <td colspan="1">32</td>
+            <td colspan="1">DIVO</td>
+            <td colspan="1">SPORTS</td>
+            <td colspan="1"><img src="images/divo.jpeg" height="100" width="180"></td>
+            <td colspan="1">52999.00/-</td>
+        </tr>
+        <tr>
+            <td colspan="1"><input type="radio" name="price" value=49999></td>
+            <td colspan="1">33</td>
+            <td colspan="1">VEYRON</td>
+            <td colspan="1">SPORTS</td>
+            <td colspan="1"><img src="images/veyron.jpeg" height="100" width="180"></td>
+            <td colspan="1">49999.00/-</td>
+        </tr>
+                 
+<tr>
+<th colspan="7"><center>It's Great To See You Here...!!!</center></th>
+</tr>
+</table>
+<h2><button type="button" onclick="displayRadioValue()">
+    Submit
+</button></h2>
+</div>
+<h6><div id="result"></div></h6><br>
+ 
+<div class="box-container">
+    <div class="box">
+        <h7>
+            <b>Check price of the car if you want to rent car more than one day. </b>
+        </h7><br>
+        <br>
+        <br>
+<div class="box-container">
+    <div class="box11">
+        <h2>Number of days:</h2><input type="number" id="myText" placeholder="Enter number of days">
+    <button type="button" onclick="myFunction()">Enter</button>
+    <h1 id="pp"></h1>
+    </div>
+    <div class="box11">
+        <h2>Serial number of car model:</h2><input type="number" id="myText1" placeholder="Enter Serial number of car model">
+    <button type="button" onclick="myFunction1()">check price</button>
+    <h1 id="2p"></h1>
+    </div>
+</div>
+</br>
+<form id="form" method="post" action="/search">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required><br><br>
+
+    <label for="id">ID:</label>
+    <input type="text" id="id" name="id" required><br><br>
+
+    <label for="age">Age:</label>
+    <input type="number" id="age" name="age" min="18" max="99" required><br><br>
+
+    <label for="phone-number">Phone Number:</label>
+    <input type="tel" id="phone" name="phone-number" required><br><br>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required><br><br>
+
+    <label for="car-model">Car Model:</label>
+    <input type="text" id="model" name="car-model" placeholder="Enter the car model" required><br><br>
+
+
+    <label for="car-model">Car Serial number:</label>
+    <input type="text" id="serial" name="car-serial" placeholder="Enter the above serial number" required><br><br>
+
+    <label for="amount">Amount:</label>
+    <input type="number" id="amount" name="amount" min="0" placeholder="Enter the above amount" required><br><br>
+
+    <label for="from-location">From Location:</label>
+    <input type="text" id="from" name="from-location" required><br><br>
+
+    <label for="to-location">To Location:</label>
+    <input type="text" id="to" name="to-location" required><br><br>
+
+    <label for="from-date">From Date:</label>
+    <input type="date" id="fromdate" name="from-date" required><br><br>
+
+    <label for="to-date">To Date:</label>
+    <input type="date" id="todate" name="to-date" required><br><br>
+  
+    
+
+    <input type="submit" value="Submit" id="submit">
+  </form></div></div>
+
+</center>
+<script>
+			$(document).ready(function() {
+				$("#bhaswanth1").on("keyup", function() {
+					var value = $(this).val().toLowerCase();
+					$("#bhaswanth2 tr").filter(function() {
+						$(this).toggle($(this).text()
+						.toLowerCase().indexOf(value) > -1)
+					});
+				});
+			});
+
+            function displayRadioValue() {
+        window.ele = document.getElementsByName("price"); 
+        for(i = 0; i < ele.length; i++) {
+            if(ele[i].checked)
+            document.getElementById("result").innerHTML= "Price for one day: "+ele[i].value;
+        }
+    }
+
+    const form = document.getElementById('form');
+    const price = document.getElementById('amount');
+    const id = document.getElementById('id');
+    const name = document.getElementById('name');
+    const age = document.getElementById('age');
+    const phone = document.getElementById('phone');
+    const email = document.getElementById('email');
+    const model = document.getElementById('model');
+    const serial = document.getElementById('serial');
+    const from = document.getElementById('from');
+    const to = document.getElementById('to');
+    const fromdate = document.getElementById('fromdate');
+    const todate = document.getElementById('todate');
+
+    form.addEventListener('submit',function(e){
+        e.preventDefault();
+
+        const pricevalue = price.value;
+        sessionStorage.setItem('amount1',pricevalue);
+        const namevalue = name.value;
+        sessionStorage.setItem('name1',namevalue);
+        const idvalue = id.value;
+        sessionStorage.setItem('id1',idvalue);
+        const agevalue = age.value;
+        sessionStorage.setItem('age1',agevalue);
+        const phonevalue = phone.value;
+        sessionStorage.setItem('phone1',phonevalue);
+        const emailvalue = email.value;
+        sessionStorage.setItem('email1',emailvalue);
+        const modelvalue = model.value;
+        sessionStorage.setItem('model1',modelvalue);
+        const serialvalue = serial.value;
+        sessionStorage.setItem('serial1',serialvalue);
+        const fromvalue = from.value;
+        sessionStorage.setItem('from1',fromvalue);
+        const tovalue = to.value;
+        sessionStorage.setItem('to1',tovalue);
+        const fromdatevalue = fromdate.value;
+        sessionStorage.setItem('fromdate1',fromdatevalue);
+        const todatevalue = todate.value;
+        sessionStorage.setItem('todate1',todatevalue);
+
+
+
+        window.location.href = "newbilling";
+    })
+
+
+    function myFunction() {
+        window.x = document.getElementById("myText").value;
+        document.getElementById("pp").innerHTML = "You selected " + x + " days.";
+        window.x2=parseInt(window.x);
+    }
+    
+    function myFunction1()
+    {
+        window.x1 = document.getElementById("myText1").value;
+        if(x1 == 1)
+        {
+            window.cc1=(3850*x2)+1050 ;
+            document.getElementById("2p").innerHTML = "Cost of Nexon car for "+x2+" days is "+cc1; 
+        }
+
+        else if(x1 == 2)
+        {
+            window.cc2=(5100*x2)+1050 ;
+            document.getElementById("2p").innerHTML = "Cost of Tigor car for "+x2+" days is "+cc2; 
+        }
+
+        else if(x1 == 3)
+        {
+            window.cc3=(2900*x2)+1050 ;
+            document.getElementById("2p").innerHTML = "Cost of Zest car for "+x2+" days is "+cc3; 
+        }
+
+        else if(x1 == 4)
+        {
+            window.cc4=(4100*x2)+1050 ;
+            document.getElementById("2p").innerHTML = "Cost of Hexa car for "+x2+" days is "+cc4; 
+        }
+
+        else if(x1 == 5)
+        {
+            window.cc5=(2575*x2)+1050 ;
+            document.getElementById("2p").innerHTML = "Cost of Altroz car for "+x2+" days is "+cc5; 
+        }
+
+        else if(x1 == 6)
+        {
+            window.cc6=(3625*x2)+1050 ;
+            document.getElementById("2p").innerHTML = "Cost of Octavia car for "+x2+" days is "+cc6; 
+        }
+        else if(x1 == 7)
+        {
+            window.cc7=(4999*x2)+1050 ;
+            document.getElementById("2p").innerHTML = "Cost of Kodiaq car for "+x2+" days is "+cc7; 
+        }
+        else if(x1 == 8)
+        {
+            window.cc8=(2575*x2)+1050 ;
+            document.getElementById("2p").innerHTML = "Cost of Superb car for "+x2+" days is "+cc8; 
+        }
+        else if(x1 == 9)
+        {
+            window.cc9=(3625*x2)+1050 ;
+            document.getElementById("2p").innerHTML = "Cost of Etios car for "+x2+" days is "+cc9; 
+        }
+        else if(x1 == 10)
+        {
+            window.cc1=(3299*x2)+1050 ;
+            document.getElementById("2p").innerHTML = "Cost of Camry car for "+x2+" days is "+cc10; 
+        }
+        else if(x1 == 11)
+        {
+            window.cc11=(2999*x2)+1050 ;
+            document.getElementById("2p").innerHTML = "Cost of Corolla car for "+x2+" days is "+cc11; 
+        }
+        else if(x1 == 12)
+        {
+            window.cc12=(3625*x2)+1050 ;
+            document.getElementById("2p").innerHTML = "Cost of City car for "+x2+" days is "+cc12; 
+        }
+        else if(x1 == 13)
+        {
+            window.cc13=(3299*x2)+1050 ;
+            document.getElementById("2p").innerHTML = "Cost of Amaze car for "+x2+" days is "+cc13; 
+        }
+        else if(x1 == 14)
+        {
+            window.cc14=(3699*x2)+1050 ;
+            document.getElementById("2p").innerHTML = "Cost of Swift car for "+x2+" days is "+cc14; 
+        }
+        else if(x1 == 15)
+        {
+            window.cc15=(3599*x2)+1050 ;
+            document.getElementById("2p").innerHTML = "Cost of Breeza car for "+x2+" days is "+cc15; 
+        }
+        else if(x1 == 16)
+        {
+            window.cc16=(9999*x2)+1050 ;
+            document.getElementById("2p").innerHTML = "Cost of Audi A4 car for "+x2+" days is "+cc16; 
+        }
+        else if(x1 == 17)
+        {
+            window.cc17=(10999*x2)+1050 ;
+            document.getElementById("2p").innerHTML = "Cost of Audi S5 car for "+x2+" days is "+cc17; 
+        }
+        else if(x1 == 18)
+        {
+            window.cc18=(9999*x2)+1050 ;
+            document.getElementById("2p").innerHTML = "Cost of Audi Q5 car for "+x2+" days is "+cc18; 
+        }
+        else if(x1 == 19)
+        {
+            window.cc19=(9999*x2)+1050 ;
+            document.getElementById("2p").innerHTML = "Cost of BMW I4 car for "+x2+" days is "+cc19; 
+        }
+        else if(x1 == 20)
+        {
+            window.cc20=(10999*x2)+1050 ;
+            document.getElementById("2p").innerHTML = "Cost of BMW X1 car for "+x2+" days is "+cc20; 
+        }
+        else if(x1 == 21)
+        {
+            window.cc21=(9999*x2)+1050 ;
+            document.getElementById("2p").innerHTML = "Cost of BMW XM car for "+x2+" days is "+cc21; 
+        }
+        else if(x1 == 22)
+        {
+            window.cc22=(9999*x2)+1050 ;
+            document.getElementById("2p").innerHTML = "Cost of BMW Z4 car for "+x2+" days is "+cc22; 
+        }
+        else if(x1 == 23)
+        {
+            window.cc23=(3850*x2)+1050 ;
+            document.getElementById("2p").innerHTML = "Cost of XUV 500 car for "+x2+" days is "+cc23; 
+        }
+        else if(x1 == 24)
+        {
+            window.cc24=(4100*x2)+1050 ;
+            document.getElementById("2p").innerHTML = "Cost of THAR car for "+x2+" days is "+cc24; 
+        }
+        else if(x1 == 25)
+        {
+            window.cc25=(2850*x2)+1050 ;
+            document.getElementById("2p").innerHTML = "Cost of Evoque car for "+x2+" days is "+cc25; 
+        }
+        else if(x1 == 26)
+        {
+            window.cc26=(4100*x2)+1050 ;
+            document.getElementById("2p").innerHTML = "Cost of Veler car for "+x2+" days is "+cc26; 
+        }
+        else if(x1 == 27)
+        {
+            window.cc27=(4700*x2)+1050 ;
+            document.getElementById("2p").innerHTML = "Cost of Discovery car for "+x2+" days is "+cc27; 
+        }
+        else if(x1 == 28)
+        {
+            window.cc28=(36250*x2)+1050 ;
+            document.getElementById("2p").innerHTML = "Cost of URUS car for "+x2+" days is "+cc28; 
+        }
+        else if(x1 == 29)
+        {
+            window.cc29=(32999*x2)+1050 ;
+            document.getElementById("2p").innerHTML = "Cost of Aventador car for "+x2+" days is "+cc29; 
+        }
+        else if(x1 == 30)
+        {
+            window.cc30=(49999*x2)+1050 ;
+            document.getElementById("2p").innerHTML = "Cost of Huracan car for "+x2+" days is "+cc30; 
+        }
+        else if(x1 == 31)
+        {
+            window.cc31=(59999*x2)+1050 ;
+            document.getElementById("2p").innerHTML = "Cost of Chiron car for "+x2+" days is "+cc31; 
+        }
+        else if(x1 == 32)
+        {
+            window.cc32=(52999*x2)+1050 ;
+            document.getElementById("2p").innerHTML = "Cost of Divo car for "+x2+" days is "+cc32; 
+        }
+        else if(x1 == 33)
+        {
+            window.cc33=(49999*x2)+1050 ;
+            document.getElementById("2p").innerHTML = "Cost of Veyron car for "+x2+" days is "+cc33; 
+        }
+    }
+
+</script>
+</center>
+</body>
+</html>

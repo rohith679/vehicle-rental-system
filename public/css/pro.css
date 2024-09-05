@@ -1,0 +1,130 @@
+*{
+margin:0;
+padding:0;
+
+}
+body{
+background-image: url(images/faaa.jpg);
+background-repeat: no-repeat;
+background-size: 100% ;
+}
+h1{
+background-image: url(images/unnamed.jpg);
+background-repeat: no-repeat;
+background-size: 100% 100px;
+color:white;
+padding: 20px;
+text-align: center;
+
+
+border-bottom: 30px solid white ;
+}
+.nav{
+float:center;
+list-style-type:none;
+display: -webkit-inline-flex;
+
+}
+.nav li{
+
+margin-top:20px;
+margin-left:50px;
+text-align:center;
+height: 50px;
+line-height: 55px;
+background-image: url(images/unnamed.jpg);
+background-repeat: no-repeat;
+background-size: 100% 100px;
+width: 235px;
+border-top: 5px solid yellow ;
+border-bottom: 5px solid yellow ;
+border-left: 5px solid yellow ;
+border-right: 5px solid yellow ;
+
+}
+.nav li a{
+color: white;
+font-size: 18px;
+font-family: casteller;
+text-decoration: none;
+
+}
+.sub-menu{
+display: none;
+position: absolute;
+list-style-type: none;
+margin-bottom: 100px;
+margin-left: -55px;
+}
+.nav li:hover .sub-menu{
+display: block;
+
+}
+.sub-menu-one{
+display: none;
+list-style-type: none;
+margin-left:200px;
+margin-top: -50px;
+border-bottom: 2px solid white ;
+}
+
+.sub-menu-two{
+    display: none;
+    list-style-type: none;
+    margin-left:-315px;
+    margin-top: -50px;
+    border-bottom: 2px solid white ;
+    }
+
+.sub-menu li:hover .sub-menu-one{
+display: block;
+}
+
+.sub-menu li:hover .sub-menu-two{
+    display: block;
+    }
+
+.nav input[type=text]{
+padding: 12px;
+margin-top: 20px;
+margin-left:20px;
+margin-top: -10px;
+
+}
+
+body
+{
+
+justify-content:center;
+align-items:center;
+
+
+}
+p
+{
+position:relative;
+font-family:casteller;
+color:#fff;
+text-transform: uppercase;
+font-size:2em;
+letter-spacing:4px;
+overflow:hidden;
+background:linear-gradient(90deg,rgb(237, 7, 95), rgb(37, 37, 153));
+background-repeat: 5;
+background-size:80%;
+animation: animate 5s linear infinite;
+
+}
+@keyframes animate
+{
+0%
+{
+background-position:-500%;
+}
+100%
+{
+background-position: 500%;
+}
+
+
+}

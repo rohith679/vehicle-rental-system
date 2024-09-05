@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+        crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <style>
+        nav {
+            height: 20%;
+        }
+
+        #logo {
+            height: 100px;
+        }
+    </style>
+</head>
+
+<body  >
+    
+                        <div class="col col-lg" style="margin: auto;">
+                            <div class="card m-xl-5"
+                                style="border-radius: 15px;box-shadow: 3px 3px 10px rgba(0,0,0,0.15);">
+                                <div class="card-body p-lg-4">
+                                    <form ng-app="myApp" ng-controller="validateCtrl" name="myform" action="/admin" method="get" novalidate>
+                                        <div>
+                                            <p class="h4" style="font-weight: 600;">Admin Login</p>
+                                            <p>Hey, Enter your details to get Login to your account</p>
+                                            
+                                        </div>
+                                        <label for="user" style="font-family: 400;">User Mail</label><br>
+                                        <input type="text" class="form-control"  name="user" placeholder="Enter Mail ID"  ng-model="user"
+                                            id="user" ng-pattern="/^[a-zA-Z0-9+_.-]+@[a-zA-Z0-9.-]+$/" required>
+                                            <div  ng-show="myform.user.$dirty && myform.user.$invalid">
+                                                <span style="color: red;" ng-show="myform.user.$error.required">User credentials  is required</span>
+                                                <span style="color: red;" ng-show="myform.user.$error.pattern">enter valid username</span>
+                                            </div>
+                                        <br>
+                                        <label for="password" style="font-family: 400;">Password</label><br>
+                                        <input type="password" class="form-control" placeholder="Enter Password" name="password" id="psw-repeat" ng-model="password" ng-minlength="6"  required>
+                                            <div  ng-show="myform.password.$dirty && myform.password.$invalid">
+                                                <span style="color: red;" ng-show="myform.password.$error.required">password  is required</span>
+                                                <span style="color: red;" ng-show="myform.password.$error.minlength">password should be a minimum length of 6</span>
+                                            </div>
+                                        <br>
+                                        <div class="mx-auto d-grid gap-2 col-6">
+                                            <input type="submit" value="LOG IN" class="btn btn-danger" style="font-weight: bold;" ng-disabled=" myform.user.$invalid || myform.password.$invalid">
+                                        </div>
+                                        <div style="text-align: center;">
+                                            <a href="#" style="color:red;text-decoration: none;">Forgot password?</a>
+                                            <p>Don't have an account <a href="registeradmin"
+                                                    style="text-decoration: none;"><b>Register here</b></a></p>
+                                                   
+                                        </div>
+                                       </form>
+                                    <script>
+                                        var app = angular.module('myApp', []);
+                                        app.controller('validateCtrl', function($scope) {
+                                         $scope.user = '';
+                                        
+                                        });
+                                        </script>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+      
+
+    </section>
+</body>
+
+</html>

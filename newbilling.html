@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Car Rental Invoice</title>
+    <!-- Link to Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+      /* Add custom styles here */
+      h1 {
+        text-align: center;
+        margin-bottom: 2rem;
+      }
+      .invoice-field {
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Vehicle Rental system Invoice</h1>
+      <div class="row">
+        <div class="col-sm-6">
+          <p class="invoice-field">Location:</p>
+          <p><span id="from"></span></p>
+          <p class="invoice-field">To Location:</p>
+          <p><span id="to"></span></p>
+          <p class="invoice-field">From Date:</p>
+          <p><span id="fromdate"></span></p>
+          <p class="invoice-field">To Date:</p>
+          <p><span id="todate"></span></p>
+        </div>
+        <div class="col-sm-6">
+          <p class="invoice-field">Name:</p>
+          <p><span id="name"></span></p>
+          <p class="invoice-field">Id:</p>
+          <p><span id="id"></span></p>
+          <p class="invoice-field">Age:</p>
+          <p><span id="age"></span></p>
+          <p class="invoice-field">Phone Number:</p>
+          <p><span id="phone"></span></p>
+          <p class="invoice-field">Email:</p>
+          <p><span id="email"></span></p>
+          <p class="invoice-field">Car Model:</p>
+          <p><span id="model"></span></p>
+          <p class="invoice-field">Car Serial number:</p>
+          <p><span id="serial"></span></p>
+          <p class="invoice-field">Amount:</p>
+          <p><span id="amount"></span></p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-12 text-center">
+          <button id="download-btn" class="btn btn-primary">Download PDF</button>
+        </div></br></br></br>
+        <b>
+            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+            
+            <a href="payment" style=" text-decoration:none; font-size:25px; color: rgb(254, 255, 254); padding: 20px;
+            background-color: red;margin-top: 20px;  border: 4px rgb(240, 239, 222) solid; border-radius:9px;
+            padding: 6px;">Book Now</a></b>
+      </div>
+    </div>
+    
+    <!-- Link to Bootstrap JS and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1+qhL0txLsVcCBs3sAPrkRFwQtM6avT" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.4/jspdf.min.js"></script>
+    <script>
+  
+      
+      // Set form data in invoice
+      const price = sessionStorage.getItem('amount1');
+      document.getElementById('amount').textContent = price;
+      const name = sessionStorage.getItem('name1');
+      document.getElementById('name').textContent = name;
+      const age = sessionStorage.getItem('age1');
+      document.getElementById('age').textContent = age;
+      const phone = sessionStorage.getItem('phone1');
+      document.getElementById('phone').textContent = phone;
+      const email = sessionStorage.getItem('email1');
+      document.getElementById('email').textContent = email;
+      const from = sessionStorage.getItem('from1');
+      document.getElementById('from').textContent = from;
+      const to = sessionStorage.getItem('to1');
+      document.getElementById('to').textContent = to;
+      const fromdate = sessionStorage.getItem('fromdate1');
+      document.getElementById('fromdate').textContent = fromdate;
+      const todate = sessionStorage.getItem('todate1');
+      document.getElementById('todate').textContent = todate;
+      const id = sessionStorage.getItem('id1');
+      document.getElementById('id').textContent = id;
+      const model = sessionStorage.getItem('model1');
+      document.getElementById('model').textContent = model;
+      const serial = sessionStorage.getItem('serial1');
+      document.getElementById('serial').textContent = serial;
+
+
+      
+      
+      
+      // Add event listener to download button
+      $('#download-btn').on('click', function() {
+                // Get invoice container
+                var invoiceContainer = $('#invoice-container')[0];
+
+                // Generate PDF using html2canvas and jspdf libraries
+                html2canvas(invoiceContainer).then(function(canvas) {
+                    var pdf = new jsPDF('p', 'pt', 'a4');
+                    pdf.addImage(canvas, 'PNG', 0, 0, 595.28, 841.89);
+                    pdf.save('invoice.pdf');
+        });
+      });
+    </script>
+  </body>
+</html>

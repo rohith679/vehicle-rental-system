@@ -1,0 +1,158 @@
+<html>
+<head>
+    <title>Account Form</title>
+    <script src="js/accformvalid.js"></script>
+    <script type="text/javascript">
+        function checktaddrpaddr() {
+            var taddr = document.getElementById("taddr");
+            var chk = document.getElementById("chk");
+            var paddr = document.getElementById("paddr");
+            if (chk.checked) {
+                paddr.value = taddr.value;
+                paddr.disabled = "yes";
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        .menu {background-color: rgba(10, 110, 150, 0.432);border-bottom: 5px solid rgb(15, 96, 128);
+            border-top: 5px solid rgb(15, 96, 128); 
+            height: 80px;width: 1509px; text-align:left;padding-top:10px; float:left;
+            border-right: 25px solid rgb(10, 88, 133);border-left: 25px solid rgb(10, 88, 133);}
+        label {
+            font-weight: bold;
+        }
+        body {
+			background-image:url(images/html2.jpg);
+			font-family: Arial, sans-serif;
+            background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    border-radius: 50%;
+    background-size: cover;
+  background-position: center;
+		}
+
+		form {
+			background-color: rgba(0,0,0,.4);
+            color: #fff;
+			padding: 20px;
+			border-radius: 5px;
+			box-shadow: 0px 0px 5px #ccc;
+			max-width: 600px;
+			margin: 0 auto;
+			margin-top: 50px;
+		}
+
+		input[type="text"], textarea, select {
+			border: 1px solid #fff;
+			border-radius: 5px;
+			padding: 10px;
+			margin-bottom: 20px;
+			width: 100%;
+		}
+
+		input[type="checkbox"] {
+			margin-top: 10px;
+			margin-bottom: 20px;
+			margin-left: 5px;
+		}
+
+		input[type="submit"] {
+			background-color: #fff;
+			color: black;
+			border: none;
+			border-radius: 5px;
+			padding: 10px;
+			cursor: pointer;
+			font-size: 16px;
+			margin-top: 20px;
+		}
+
+		input[type="submit"]:hover {
+			background-color: red;
+		}
+    </style>
+</head>
+<body>
+    <br>
+    <div class="menu">
+        <h1 align="center"><bold>Update Profile</bold></h1> 
+    </div>
+    <br>
+    <br>
+        <form class="container" action="" onsubmit="return formvalidate();">
+            <div class="form-group">
+                <label for="sname">Name:</label>
+                <input type="text" id="sname" class="form-control" placeholder="B.Bhaswanth kumar">
+            </div>
+            <div class="form-group">
+                <label for="dob">Date of Birth:</label>
+                <input type="text" id="dob" class="form-control" placeholder="DD-MM-YYYY">
+            </div>
+            <div class="form-group">
+                <label for="mailid">Email ID:</label>
+                <input type="text" id="mailid" class="form-control" placeholder="bhaswanth67@gmail.com">
+            </div>
+            <div class="form-group">
+                <label for="taddr">Temp Address:</label>
+                <textarea cols="20" rows="5" id="taddr" class="form-control"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="chk">Permanent Address is same as Temp address:<input type="checkbox" id="chk" onchange="checktaddrpaddr();" class="form-check-input"></label>
+            </div>
+            <div class="form-group">
+                <label for="paddr">Permanent Address:</label>
+                <textarea cols="20" rows="5" id="paddr" class="form-control"></textarea>
+            </div>
+            <div class="form-group">
+              <label for="splace">Place:</label>
+              <input type="text" id="splace" class="form-control" placeholder="Rayachoti">
+          </div>
+            <div class="form-group">
+                <label for="state">Choose your state:</label>
+                <select id="state" name="statelist" form="form" class="form-control">
+                    <option value="Select">Select</option>
+                    <option value="Andhra pradesh">Andhra pradesh</option>
+                    <option value="Arunachal pradesh">Arunachal pradesh</option>
+                    <option value="Assam">Assam</option>
+                    <option value="Bihar">Bihar</option>
+                    <option value="Chhattisgarh">Chhattisgarh</option>
+                    <option value="Goa">Goa</option>
+                    <option value="Gujarat">Gujarat</option>
+                    <option value="Haryana">Haryana</option>
+                    <option value="Himachal pradesh">Himachal pradesh</option>
+                    <option value="Jharkand">Jharkand</option>
+                    <option value="Karnataka">Karnataka</option>
+                    <option value="Kerala">Kerala</option>
+                    <option value="Madhya pradesh">Madhya pradesh</option>
+                    <option value="Maharastra">Maharastra</option>
+                    <option value="Manipur">Manipur</option>
+  <option value="Meghalaya">Meghalaya</option>
+  <option value="Mizoram">Mizoram</option>
+  <option value="Nagaland">Nagaland</option>
+  <option value="Odisha">Odisha</option>
+  <option value="Panjab">Panjab</option>
+  <option value="Rajastan">Rajastan</option>
+  <option value="Sikkim">Sikkim</option>
+  <option value="Tamilnadu">Tamilnadu</option>
+  <option value="Telengana">Telengana</option>
+  <option value="Tripura">Tripura</option>
+  <option value="Uttarakand">Uttarakand</option>
+  <option value="Uttar pradesh">Uttar pradesh</option>
+  <option value="West bengal">West bengal</option>
+</select></div>
+<div class="form-group">
+    <label for="pnum">Pincode:</label>
+<input type="text"id="p1num"class="form-control">
+</div>
+<div class="form-group">
+    <label for="pnum">Phone number:</label>
+    <input type="text"id="pnum"class="form-control" placeholder="9988556362"></div>
+    <div class="form-group">
+       
+      <pre>                                                                    <input type="submit" value="submit"></pre>  
+ 
+    </form>
+    </body>
+    </html>
