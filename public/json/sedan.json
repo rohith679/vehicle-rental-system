@@ -1,0 +1,87 @@
+[
+    {
+      "modelNumber": "#1.NEXON",
+      "carDescription": "Milage:-11.25km/l,Top notch model,Road assit.,JBL music\nHandling and Installation of Accessories.",
+      "rentChargesPerDay": "3850.00/-"
+    },
+    {
+      "modelNumber": "#2.TIGOR",
+      
+      "carDescription": "Milage:-18km/l,modified model,Road assit.,Dolby music.\nHandling and Installation of Accessories.",
+      "rentChargesPerDay": "1050.00/-"
+    },
+    {
+      "modelNumber": "#3.ZEST",
+      
+      "carDescription": "Milage:-9.75km/l,Base model,Dolby music\nHandling and Installation of Accessories.",
+      "rentChargesPerDay": "2900.00/-"
+    },
+    {
+        "modelNumber": "#4.HEXA",
+        
+        "carDescription": "Milage:-15km/l,Base model,GPS,Dolby surround.\nHandling and Installation of Accessories.",
+        "rentChargesPerDay": "4100.00/-"
+    },
+    {
+      "modelNumber": "#5.ALRTOZ",
+      
+      "carDescription": "Milage:-15.35km/l,Mid model,Road assit.,JBL music.\nHandling and Installation of Accessories.",
+      "rentChargesPerDay": "2575.00/-"
+  },
+  {
+    "modelNumber": "#6.Octavia",
+    "carDescription": "Milage:-16km/l,Top notch model,GPS,JBL music\nHandling and Installation of Accessories.",
+    "rentChargesPerDay": "3625.00/-"
+  },
+  {
+    "modelNumber": "#7.Kodiaq",
+    
+    "carDescription": "Milage:-10.25km/l,modified model,Road assit.,Dolby music\nHandling and Installation of Accessories.",
+    "rentChargesPerDay": "4999.00/-"
+  },
+  {
+    "modelNumber": "#8.Superb",
+    
+    "carDescription": "Milage:-12.25km/l,Base model,GPS,Dolby music\nHandling and Installation of Accessories.",
+    "rentChargesPerDay": "4999.00/-"
+  },
+  {
+    "modelNumber": "#9.Etios",
+    "carDescription": "Milage:-13.25km/l,Top notch model,Road assit.,JBL music\nHandling and Installation of Accessories.",
+    "rentChargesPerDay": "3625.00/-"
+  },
+  {
+    "modelNumber": "#10.Camry",
+    
+    "carDescription": "Milage:-11.25km/l,Base model,Road assit.,Dolby music\nHandling and Installation of Accessories.",
+    "rentChargesPerDay": "3299.00/-"
+  },
+  {
+    "modelNumber": "#11.Corolla",
+    
+    "carDescription": "Milage:-9.25km/l,Base model,Road assit.,Dolby music\nHandling and Installation of Accessories.",
+    "rentChargesPerDay": "2999.00/-"
+  },
+  {
+    "modelNumber": "#12.CITY",
+    "carDescription": "Milage:-13.25km/l,Top notch model,Road assit.,JBL music\nHandling and Installation of Accessories.",
+    "rentChargesPerDay": "3625.00/-"
+  },
+  {
+    "modelNumber": "#13.Amaze",
+    
+    "carDescription": "Milage:-7.25km/l,Base model,Road assit.,Dolby music\nHandling and Installation of Accessories.",
+    "rentChargesPerDay": "3299.00/-"
+  },
+  {
+    "modelNumber": "#14.SWIFT",
+    "carDescription": "Milage:-13.25km/l,Top notch model,Road assit.,JBL music\nHandling and Installation of Accessories.",
+    "rentChargesPerDay": "3625.00/-"
+  },
+  {
+    "modelNumber": "#15.BREEZA",
+    
+    "carDescription": "Milage:-7.25km/l,Base model,Road assit.,Dolby music\nHandling and Installation of Accessories.",
+    "rentChargesPerDay": "3299.00/-"
+  }
+]

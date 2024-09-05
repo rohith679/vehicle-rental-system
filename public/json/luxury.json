@@ -1,0 +1,42 @@
+[
+    {
+      "modelNumber": "#1.AUDI A4",
+      "carDescription": "Milage:-10.25km/l,Top notch model,Road assit.,JBL music\nHandling and Installation of Accessories.",
+      "rentChargesPerDay": "9999.00/-"
+    },
+    {
+      "modelNumber": "#2.AUDI S5",
+      
+      "carDescription": "Milage:-9km/l,Premium model,Road assit.,Dolby music\nHandling and Installation of Accessories.",
+      "rentChargesPerDay": "10999.00/-"
+    },
+    {
+      "modelNumber": "#3.AUDI Q5",
+      
+      "carDescription": "Milage:-10km/l,Modified model,Road assit.,JBL music\nHandling and Installation of Accessories.",
+      "rentChargesPerDay": "9999.00/-"
+    },
+    {
+      "modelNumber": "#4.BMW I4",
+      "carDescription": "Milage:-10.25km/l,Top notch model,Road assit.,JBL music\nHandling and Installation of Accessories.",
+      "rentChargesPerDay": "9999.00/-"
+    },
+    {
+      "modelNumber": "#5.BMW X1",
+      
+      "carDescription": "Milage:-9km/l,Premium model,Road assit.,Dolby music\nHandling and Installation of Accessories.",
+      "rentChargesPerDay": "10999.00/-"
+    },
+    {
+      "modelNumber": "#6.BMW XM",
+      
+      "carDescription": "Milage:-10km/l,Modified model,Road assit.,JBL music\nHandling and Installation of Accessories.",
+      "rentChargesPerDay": "9999.00/-"
+    },
+    {
+        "modelNumber": "#7.BMW Z4",
+        
+        "carDescription": "Milage:-15km/l,Top notch model,Road assit.\nHandling and Installation of Accessories.",
+        "rentChargesPerDay": "9999.00/-"
+    }
+]

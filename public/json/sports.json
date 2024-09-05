@@ -1,0 +1,36 @@
+[
+    {
+      "modelNumber": "#1.URUS",
+      "carDescription": "Milage:-21.25km/l,Top notch model,JBL music\nHandling and Installation of Accessories.",
+      "rentChargesPerDay": "36250.00/-"
+    },
+    {
+      "modelNumber": "#2.VELER",
+      
+      "carDescription": "Milage:-7.25km/l,Base model,Dolby music\nHandling and Installation of Accessories.",
+      "rentChargesPerDay": "32999.00/-"
+    },
+    {
+      "modelNumber": "#3.Superb",
+      
+      "carDescription": "Milage:-10.25km/l,Base model,Road Assist,Dolby music\nHandling and Installation of Accessories.",
+      "rentChargesPerDay": "49999.00/-"
+    },
+    {
+      "modelNumber": "#4.CHIRON",
+      "carDescription": "Milage:-8km/l,Top notch model,JBL music\nHandling and Installation of Accessories.",
+      "rentChargesPerDay": "59999.00/-"
+    },
+    {
+      "modelNumber": "#5.DIVO",
+      
+      "carDescription": "Milage:-7km/l,Modified model,Dolby music\nHandling and Installation of Accessories.",
+      "rentChargesPerDay": "52999.00/-"
+    },
+    {
+      "modelNumber": "#6.VEYRON",
+      
+      "carDescription": "Milage:-9.25km/l,Top notch model,Road Assist,Dolby music and Jbl music\nHandling and Installation of Accessories.",
+      "rentChargesPerDay": "49999.00/-"
+    }
+]
